@@ -418,7 +418,8 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
   text-transform: uppercase;
   font-weight: 500;
   padding: 30px 0;
-  color: #2c2c2c;
+  /*color: #2c2c2c;*/
+  color: white;
 }
 .main-header .menu-wrapper ul li a:hover {
   color: #f69730;
