@@ -278,19 +278,28 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
   overflow: hidden;
   background-color: white;
 }
-.top-header .logo {
-  padding: 21px 0 21px 60px;
+
+.logo {
+  padding: 16px 0 16px 60px;
+  /*background-color: #A37ACC;*/
+  
 }
 
 .logo img{
  display:block;
  clear:both;
  float:left;
+   display:inline-block;
+/*  vertical-align: middle;*/
 }
 .logo span{
   float:left;
-  padding: 53px 0 0 30px;
-  /*background-color: #B8E68A;*/
+  padding: 53px 0 0 10px;
+/*  background-color: #B8E68A;*/
+}
+
+.social-top{
+/*  background-color: #B8FF94;*/
 }
 
 @media screen and (min-width: 769px) and (max-width: 991px) {
@@ -300,16 +309,37 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
     text-align-display: block;
     text-align-text-align: center;
   }
+
+  .top-header .logo img {
+    padding: 0 20px; 
+  }
+
   .top-header .logo span {
-    display: block;
+    display: none;
     margin-left: 0 !important;
   }
+
 }
+
 @media screen and (max-width: 768px) {
   .top-header .logo {
     text-align: center;
-    padding: 20px;
+    padding: 0px 20px;
   }
+
+  .logo img {
+    padding: 1px 0;
+     -moz-transform: scale(0.7);
+   -webkit-transform: scale(0.9);
+   -o-transform: scale(0.9);
+   transform: scale(0.9); 
+  }
+  .top-header .logo span {
+    display: none;
+/*    padding: 53px 0 0 30px;*/
+  }
+}
+
 /*  .top-header .logo span {
     display: none;
   }*/
@@ -342,7 +372,7 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
 }
 @media screen and (max-width: 768px) {
   .top-header .social-top {
-    padding: 0 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     text-align: center;
   }
 }
@@ -413,10 +443,10 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
   color: white;
 }
 .main-header .menu-wrapper ul li a:hover {
-  color: #f69730;
+  color: #b35109;
 }
 .main-header .menu-wrapper ul li.active a {
-  color: #f69730;
+  color: #b35109; /*#f69730*/
 }
 .main-header .menu-wrapper ul li ul {
   position: absolute;
@@ -456,7 +486,7 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
   color: #777777 !important;
 }
 .main-header .menu-wrapper ul li ul li a:hover {
-  color: #f69730 !important;
+  color: #b35109 !important;
 }
 .main-header .menu-wrapper ul li ul li:after {
   display: none;
@@ -674,6 +704,7 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
 }
 
 .swiper-slide {
+    background-image: url(../home/T4E_warangal2015_website3b_1100_edit1.jpg);
 /*  background-size: 100%;*/
   background-size: cover;
   background-repeat: no-repeat;
@@ -844,8 +875,8 @@ margin-bottom: 2px;
   }
 
   .slider-caption div .first {
-  font-size: 0.9em;
-  font-weight: 300;
+  font-size: 1em;
+  font-weight: 500;
   margin-bottom: 2px;
 
   }
@@ -883,6 +914,7 @@ margin-bottom: 2px;
 }
 */
 .slider-caption div .main-btn {
+  width:auto;
   font-size: 0.8em;
   padding: 3px 5px;
   text-align: -webkit-left;
