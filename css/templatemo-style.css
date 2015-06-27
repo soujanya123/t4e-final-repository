@@ -214,23 +214,6 @@ textarea:focus {
   text-align: center;
 }
 
-.main-btn {
-  color: white;
-  border: 1px solid #0080FF;
-  background-color: #0080FF;
-  padding: 6px 10px;
-  /*text-transform: uppercase;*/
-  font-size: 1.375em;
-/*  font-weight: 700;*/
-  display: inline-block;
-}
-
-.last-date{
-  color: white;
-  font-size: 1.475em;
-  font-weight: 500;
-}
-
 blockquote {
   margin: 36px;
   background-image: url(../images/quote.png);
@@ -623,6 +606,16 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
 }
 
 .swiper-container {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+
+}
+
+/*.swiper-container {
   background: url(../home/T4E_bg.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -636,18 +629,10 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
 /*  -moz-transform: scale(0.9);
    -webkit-transform: scale(1,1);
    -o-transform: scale(1,1);
-   transform: scale(0.989);*/
-/*  z-index: 2;*/
-}
-
-/*.swiper-container {
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
+   transform: scale(0.989);
   z-index: 2;
 }*/
+
 @media screen and (max-width: 768px) {
   .swiper-container {
     top: 120px;
@@ -689,8 +674,8 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
 }
 
 .swiper-slide {
-  background-size: 100%;
-/*  background-size: cover;*/
+/*  background-size: 100%;*/
+  background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -712,12 +697,217 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
   z-index: 10;
   font-family: "Arial",Helvetica Neue,Helvetica,sans-serif;
   width: 100%;
-  top: 45%;
+  top: 48%;
 }
 
-.slider-caption .first {
-color: #333333;
+.slider-caption .inner-content {
+  width: 50%;
+  margin: 0 5% 0 45%;
+}
+
+/*.slider-caption {
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
+  top: 53%;
+  color: white;
+}*/
+.slider-caption div .first {
+/*  color: white;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-bottom: 20px;*/
+
+  color: #333333;
 /*text-transform: uppercase;*/
+font-weight: 300;
+font-size: 1.5em;
+margin-bottom: 2px;
+}
+
+.slider-caption div .second{
+  color: #333333;
+  /*text-transform: uppercase;*/
+  font-weight: 300;
+  font-size: 3em;
+  margin-bottom: 0px;
+}
+
+.slider-caption div .date{
+  margin-bottom: 15px;
+  font-size: 1.4em;
+  font-weight: 300;
+  position: relative;
+  left: 43%;
+  color: #333333;
+} 
+
+.slider-caption div .place{
+  margin-bottom: 20px;
+  font-size: 1.7em;
+  font-weight: 300;
+  position: relative;
+  left: 40%;
+  color: #333333;  
+}
+
+.slider-caption div .main-btn {
+  color: white;
+  font-size: 1.3em;
+  border: 1px solid #0080FF;
+  padding: 6px 10px;
+  background-color: #0080FF;
+/*  text-transform: uppercase;
+  font-weight: 700;*/
+  display: inline-block;
+}
+
+.slider-caption div .main-btn span{
+/*  text-transform: uppercase;*/
+  font-weight: 700;
+  display: inline-block;
+}
+
+
+/*.slider-caption p {
+  margin-bottom: 30px;
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.slider-caption a {
+  color: white;
+}
+.slider-caption a.main-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}*/
+@media screen and (min-width: 769px) and (max-width: 991px) {
+
+  .slider-caption {
+    width: 100%;
+    top: 43%;
+  }
+
+  .slider-caption .inner-content {
+    width: 50%;
+    margin: 0 1% 0 49%;
+  }
+
+  .slider-caption div .first {
+  font-size: 1.2em;
+  font-weight: 400;
+  margin-bottom: 2px;
+  }
+
+  .slider-caption div .second{
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0px;
+  }
+
+  .slider-caption div .date{
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  font-weight: 500;
+} 
+
+.slider-caption div .place{
+  margin-bottom: 20px;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.slider-caption div .main-btn {
+  font-size: 1.1em;
+}
+
+.slider-caption div .main-btn span{
+/*  text-transform: uppercase;*/
+  font-weight: 700;
+  display: inline-block;
+}
+
+}
+@media screen and (max-width: 768px) {
+
+  .slider-caption {
+    width: 100%;
+    top: 37%;
+  }
+
+  .slider-caption .inner-content {
+    width: 60%;
+    margin: 0 4% 0 36%;
+    text-align: right;
+  }
+
+  .slider-caption div .first {
+  font-size: 0.9em;
+  font-weight: 300;
+  margin-bottom: 2px;
+
+  }
+
+  .slider-caption div .second{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 0px;
+  /*  text-align:right;*/
+  }
+
+  .slider-caption div .date{
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: 700;
+  left: 0;
+} 
+
+.slider-caption div .place{
+  margin-bottom: 20px;
+  font-size: 1em;
+  font-weight: 700;
+  left: 0;
+}
+
+/*.slider-caption div .main-btn {
+  color: white;
+  font-size: 1.3em;
+  border: 1px solid #0080FF;
+  padding: 6px 10px;
+  background-color: #0080FF;
+/*  text-transform: uppercase;
+  font-weight: 700;
+  display: inline-block;
+}
+*/
+.slider-caption div .main-btn {
+  font-size: 0.8em;
+  padding: 3px 5px;
+  text-align: -webkit-left;
+}
+
+.slider-caption div .main-btn span{
+/*  text-transform: uppercase;*/
+  font-weight: 700;
+  display: inline-block;
+}
+
+/*  .slider-caption {
+    top: 47%;
+  }
+  .slider-caption div .first {
+    font-size: 1.7em;
+  }
+  .slider-caption p {
+    font-size: 1em;
+  }*/
+}
+
+/*.slider-caption .first {
+color: #333333;
+text-transform: uppercase;
 font-weight: 300;
 font-size: 1.5em;
 margin-bottom: 2px;
@@ -725,7 +915,7 @@ margin-bottom: 2px;
 
 .slider-caption .second {
 color: #333333;
-/*text-transform: uppercase;*/
+text-transform: uppercase;
 font-weight: 300;
 font-size: 3em;
 margin-bottom: 0px;
@@ -747,17 +937,18 @@ font-weight: 300;
 position: relative;
 left: 40%;
 color: #333333;
-}
+}*/
 
-.slider-caption .inner-content {
+/*
 width: 50%;
 top: 0px;
 margin: 0 0px 250px 700px;
+*/
 
-}
 
 /*
 .slider-caption h2 {
+
   color: white;
   text-transform: uppercase;
   font-weight: 300;
@@ -769,42 +960,15 @@ margin: 0 0px 250px 700px;
   font-size: 1.5em;
   font-weight: 300;
 }
-.slider-caption .inner-content {
-  width: 60%;
-  margin: 0 auto;
-}*/
+*/
 
-.swiper-slide {
-  background-size: 100%;
-/*  background-size: cover;*/
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  z-index: 8;
-}
-
-.overlay-s {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  /*background-color: rgba(0, 0, 0, 0.6);*/
-  z-index: 9;
-}
-
-.slider-caption a {
+/*.slider-caption a {
   color: white;
 }
 .slider-caption a.main-btn:hover {
   background-color: #0080FF;
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
-/*  .slider-caption h2 {
-    font-size: 1.7em;
-  }
-  .slider-caption p {
-    font-size: 1em;
-  }*/
 
 .slider-caption {
   width: 100%;
@@ -813,7 +977,6 @@ margin: 0 0px 250px 700px;
 
 .slider-caption .first {
 color: #333333;
-/*text-transform: uppercase;*/
 font-weight: 300;
 font-size: 1.5em;
 margin-bottom: 2px;
@@ -821,7 +984,6 @@ margin-bottom: 2px;
 
 .slider-caption .second {
 color: #333333;
-/*text-transform: uppercase;*/
 font-weight: 300;
 font-size: 3em;
 margin-bottom: 0px;
@@ -837,7 +999,7 @@ margin-bottom: 0px;
   .slider-caption p {
     font-size: 1em;
   }
-}
+}*/
 
 #pageloader {
   width: 100%;
