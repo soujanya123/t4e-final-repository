@@ -280,7 +280,7 @@ a.btn-left:hover, .top-header .social-top ul li a:hover, .main-header .menu-wrap
 }
 
 .logo {
-  padding: 16px 0 16px 60px;
+  padding: 21px 0 21px 60px;
   /*background-color: #A37ACC;*/
   
 }
@@ -1976,4 +1976,29 @@ ul.archive-list li h3 a:hover {
 img {
    
   border: 0 none;
+}
+
+.add-left-padding{
+    padding-left:40px;
+}
+
+.add-color{
+    font-weight: 700;
+    color:#b35109;
+    }
+.remove-left-padding{
+ padding-left:0;   
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+.add-left-padding{
+    padding-left:20px;
+}    
+}
+
+
+@media screen and (max-width: 768px) {
+.add-left-padding{
+    padding-left:0px;
+}        
 }
